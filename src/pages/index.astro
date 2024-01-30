@@ -1,0 +1,82 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+---
+
+<Layout title="Frontend Mentor | Time tracking dashboard">
+  <main
+    class="bg-[#0E1323] px-[10.31rem] py-[15.81rem] grid-cols-4 gap-[1.8rem]"
+  >
+    <!-- Report for / First Row & First Column -->
+    <section class="row-start-1 row-end-3">
+      <div
+        class="bg-[#5747EA] rounded-[0.9375rem] flex flex-col py-20 pl-8 pr-[5.31rem]"
+      >
+        <img
+          src="/images/image-jeremy.png"
+          alt=""
+          class="inline-block w-[10.6875rem] h-[ 7.125rem] rounded-full border-2 border-white"
+        />
+        <h1 class="text-[#BBC0FF] text-[0.9375rem] font-normal leading-normal">
+          Report for
+        </h1>
+        <h2 class="text-[#FFFFFF] font-normal text-[2.5rem] leading-normal">
+          Jeremy Robson
+        </h2>
+      </div>
+      <div
+        class="bg-[#1C204B] rounded-x-[ 0.9375rem] text-[#7078C9] text-lg leading-normal font-normal pl-8 pt-[1.62rem] pb-[2.6rem]"
+      >
+        <h2 class="">Daily</h2>
+        <h2 class="">Weekly</h2>
+        <h2 class="">Monthly</h2>
+      </div>
+    </section>
+    <!-- Work / First Row & Second Column -->
+    <section class="w-[15.9375rem] h-[12.4375rem]">
+      <div class="overflow-hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="255"
+          height="160"
+          viewBox="0 0 255 160"
+          fill="none"
+        >
+          <rect width="255" height="44.96" rx="15" fill="#FF8B64"></rect>
+          <mask
+            id="mask0_0_418"
+            style="mask-type:luminance"
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="255"
+            height="160"
+          >
+            <rect width="255" height="160" rx="15" fill="white"></rect>
+          </mask>
+          <g mask="url(#mask0_0_418)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M230.499 45.7176L235.227 40.9897C238.365 37.8516 238.365 32.7727 235.227 29.6345L224.388 18.7955L226.452 16.7309C228.73 14.4536 228.73 10.7498 226.452 8.47254L218.194 0.2142C215.917 -2.06304 212.213 -2.06304 209.936 0.2142L207.871 2.27879L197.032 -8.56028C193.894 -11.6985 188.815 -11.6985 185.677 -8.56028L180.949 -3.83239L197.135 28.5403C197.239 28.7674 197.383 28.9532 197.548 29.1184C197.713 29.2835 197.899 29.4281 198.126 29.5313L230.499 45.7176ZM212 6.40795L220.259 14.6663L222.323 12.6017L214.065 4.34337L212 6.40795ZM196.165 33.4334C195.649 33.2063 195.009 32.7727 194.451 32.2153C193.894 31.6578 193.46 31.0178 193.151 30.3365L177.687 -0.570342L161.934 15.1824C158.796 18.3206 158.796 23.3995 161.934 26.5377L200.129 64.7325C203.267 67.8706 208.346 67.8706 211.484 64.7325L227.237 48.9797L196.165 33.4334Z"
+              fill="#D96C47"></path>
+          </g>
+        </svg>
+      </div>
+      <div class="bg-[#1C204B]">
+        <div class="flex justify-between items-center">
+          <h2 class="text-lg font-normal leading-normal">Work</h2>
+          <img
+            src="/public/images/icon-ellipsis.svg"
+            alt=""
+            class="inline-block"
+          />
+        </div>
+        <div class="">
+          <p class="">32hrs</p>
+          <p class="">Last Week - 36hrs</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
