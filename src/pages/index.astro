@@ -5,17 +5,15 @@ import "@/styles/globals.css";
 
 <Layout title="Frontend Mentor | Time tracking dashboard">
   <main
-    class="bg-[#0E1323] px-[10.31rem] py-[15.81rem] grid-cols-4 gap-[1.8rem]"
+    class="bg-[#0E1323] px-[10.31rem] py-[15.81rem] grid grid-cols-4 grid-rows-2 gap-[1.81rem]"
   >
     <!-- Report for / First Row & First Column -->
-    <section class="row-start-1 row-end-3">
-      <div
-        class="bg-[#5747EA] rounded-[0.9375rem] flex flex-col py-20 pl-8 pr-[5.31rem]"
-      >
+    <section class="w-[15.9375rem] h-[32.375rem] row-start-1 row-end-3">
+      <div class="bg-[#5747EA] rounded-[0.9375rem] flex flex-col h-[22.22rem]">
         <img
           src="/images/image-jeremy.png"
           alt=""
-          class="inline-block w-[10.6875rem] h-[ 7.125rem] rounded-full border-2 border-white"
+          class="inline-block w-[6rem] h-[6rem] rounded-full border-2 border-white"
         />
         <h1 class="text-[#BBC0FF] text-[0.9375rem] font-normal leading-normal">
           Report for
@@ -25,16 +23,16 @@ import "@/styles/globals.css";
         </h2>
       </div>
       <div
-        class="bg-[#1C204B] rounded-x-[ 0.9375rem] text-[#7078C9] text-lg leading-normal font-normal pl-8 pt-[1.62rem] pb-[2.6rem]"
+        class="bg-[#1C204B] rounded-x-[ 0.9375rem] text-[#7078C9] text-lg leading-normal font-normal flex flex-col gap-[1.31rem] h-[10.25rem]"
       >
         <h2 class="">Daily</h2>
-        <h2 class="">Weekly</h2>
+        <h2 class="text-[#fff]">Weekly</h2>
         <h2 class="">Monthly</h2>
       </div>
     </section>
     <!-- Work / First Row & Second Column -->
     <section class="w-[15.9375rem] h-[12.4375rem]">
-      <div class="overflow-hidden">
+      <div class="">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="255"
@@ -42,7 +40,7 @@ import "@/styles/globals.css";
           viewBox="0 0 255 160"
           fill="none"
         >
-          <rect width="255" height="44.96" rx="15" fill="#FF8B64"></rect>
+          <rect width="255" height="160" rx="15" fill="#FF8B64"></rect>
           <mask
             id="mask0_0_418"
             style="mask-type:luminance"
@@ -63,7 +61,9 @@ import "@/styles/globals.css";
           </g>
         </svg>
       </div>
-      <div class="bg-[#1C204B]">
+      <div
+        class="bg-[#1C204B] text-[#fff] p-8 relative -top-28 rounded-[0.9375rem]"
+      >
         <div class="flex justify-between items-center">
           <h2 class="text-lg font-normal leading-normal">Work</h2>
           <img
@@ -72,9 +72,266 @@ import "@/styles/globals.css";
             class="inline-block"
           />
         </div>
-        <div class="">
-          <p class="">32hrs</p>
-          <p class="">Last Week - 36hrs</p>
+        <div class="flex flex-col gap-2">
+          <p class="text-[3.5rem] font-normal leading-normal">32hrs</p>
+          <p class="text-[0.9375rem] font-normal leading-normal">
+            Last Week - 36hrs
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Play / First Row & Third Column -->
+    <section class="w-[15.9375rem] h-[12.4375rem]">
+      <div class="">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="255"
+          height="160"
+          viewBox="0 0 255 160"
+          fill="none"
+        >
+          <rect width="255" height="160" rx="15" fill="#55C2E6"></rect>
+          <mask
+            id="mask0_0_435"
+            style="mask-type:luminance"
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="255"
+            height="160"
+          >
+            <rect width="255" height="160" rx="15" fill="white"></rect>
+          </mask>
+          <g mask="url(#mask0_0_435)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M231.224 46.9535L218.91 66.8464C215.564 72.2515 208.051 73.1172 203.561 68.6277C201.648 66.7148 200.869 63.8997 201.524 61.279L203.469 53.4969C203.803 52.1655 203.407 50.7352 202.436 49.7648L179.834 27.1629C178.864 26.1924 177.435 25.7965 176.103 26.1299L168.32 28.0751C165.7 28.7307 162.885 27.9513 160.974 26.0406C156.478 21.5442 157.353 14.0325 162.753 10.6899L182.646 -1.62402C189.968 -6.15708 198.097 -3.77065 202.554 0.686075L228.914 27.0464C235.003 33.1356 234.541 41.5949 231.224 46.9535ZM192.792 18.8343L194.683 20.726C195.598 21.6404 197.081 21.6404 197.995 20.726C198.91 19.8112 198.91 18.3284 197.995 17.414L196.104 15.5223L197.995 13.6305C198.91 12.7162 198.91 11.2333 197.995 10.3185C197.081 9.40413 195.598 9.40414 194.683 10.3185L192.792 12.2102L190.9 10.3185C189.986 9.40414 188.503 9.40413 187.588 10.3189C186.674 11.2333 186.674 12.7162 187.588 13.6305L189.48 15.5223L187.588 17.414C186.674 18.3284 186.674 19.8112 187.588 20.7256C188.503 21.6404 189.986 21.6404 190.9 20.726L192.792 18.8343ZM208.874 34.9161C207.96 34.0022 207.96 32.5184 208.874 31.6045C209.788 30.6901 211.272 30.6906 212.186 31.6041C213.1 32.5184 213.1 34.0021 212.186 34.9165C211.272 35.8305 209.788 35.8305 208.874 34.9161ZM208.874 38.6995C207.96 39.6135 207.96 41.0976 208.874 42.0116C209.788 42.9255 211.272 42.9255 212.186 42.0116C213.099 41.0976 213.1 39.6135 212.186 38.6995C211.272 37.7856 209.787 37.7856 208.874 38.6995ZM215.969 34.9165C215.055 34.0026 215.055 32.5184 215.969 31.6041C216.883 30.6901 218.367 30.6906 219.281 31.6045C220.195 32.5184 220.195 34.0021 219.281 34.9161C218.367 35.8305 216.883 35.8305 215.969 34.9165ZM215.969 38.6995C215.055 39.6135 215.055 41.0976 215.969 42.0116C216.883 42.9255 218.367 42.9255 219.281 42.0116C220.195 41.0972 220.195 39.6135 219.281 38.6995C218.367 37.7856 216.883 37.7852 215.969 38.6995Z"
+              fill="#3F9CBB"></path>
+          </g>
+        </svg>
+      </div>
+      <div
+        class="bg-[#1C204B] text-[#fff] p-8 relative -top-28 rounded-[0.9375rem]"
+      >
+        <div class="flex justify-between items-center">
+          <h2 class="text-lg font-normal leading-normal">Play</h2>
+          <img
+            src="/public/images/icon-ellipsis.svg"
+            alt=""
+            class="inline-block"
+          />
+        </div>
+        <div class="flex flex-col gap-2">
+          <p class="text-[3.5rem] font-normal leading-normal">10hrs</p>
+          <p class="text-[0.9375rem] font-normal leading-normal">
+            Last Week - 8hrs
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Study / First Row & Fourth Column -->
+    <section class="w-[15.9375rem] h-[12.4375rem]">
+      <div class="">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="255"
+          height="160"
+          viewBox="0 0 255 160"
+          fill="none"
+        >
+          <rect width="255" height="160" rx="15" fill="#FF5E7D"></rect>
+          <mask
+            id="mask0_0_456"
+            style="mask-type:luminance"
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="255"
+            height="160"
+          >
+            <rect width="255" height="160" rx="15" fill="white"></rect>
+          </mask>
+          <g mask="url(#mask0_0_456)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M236.058 35.6805L237.381 37.0034C238.113 37.7346 238.113 38.918 237.381 39.6492L205.632 71.3982C204.901 72.1294 203.718 72.1294 202.987 71.3982L188.121 56.5323C186.034 57.5257 183.457 57.1602 181.732 55.4355L176.441 50.144C174.716 48.4193 174.351 45.842 175.344 43.7556L160.478 28.8898C159.747 28.1586 159.747 26.9752 160.478 26.244L192.227 -5.50501C192.958 -6.23621 194.142 -6.23621 194.873 -5.50501L196.196 -4.18213L168.415 23.5983C166.227 25.7867 166.315 29.4353 168.504 31.6237L180.636 43.7556C179.642 45.8421 180.008 48.4193 181.732 50.144C183.457 51.8687 186.034 52.2343 188.121 51.2408L200.253 63.3727C202.441 65.5611 206.09 65.6493 208.278 63.4609L236.058 35.6805ZM217.014 12.2166L186.67 42.5604C187.019 41.0333 187.851 35.0971 181.732 28.978C181.001 28.2468 181.001 27.0634 181.732 26.3322L208.19 -0.125311C208.921 -0.856508 210.104 -0.856508 210.836 -0.125311C215.325 4.36365 216.713 8.85534 217.014 12.2166ZM189.67 47.4982L202.898 60.727C203.63 61.4582 204.813 61.4582 205.544 60.727L234.647 31.6237C235.379 30.8925 235.379 29.7092 234.647 28.978L224.064 18.395C222.57 16.9003 220.687 16.0525 218.739 15.783L187.024 47.4982C187.754 46.7684 188.94 46.7684 189.67 47.4982ZM200.253 -2.77106C200.984 -3.50226 202.167 -3.50226 202.898 -2.77106L204.221 -1.44819L179.087 23.6865C176.898 25.8749 176.898 29.4353 179.087 31.6237C183.092 35.629 183.287 39.3197 183.13 40.9586L171.149 28.978C170.418 28.2468 170.418 27.0634 171.149 26.3322L200.253 -2.77106Z"
+              fill="#F04667"></path>
+          </g>
+        </svg>
+      </div>
+      <div
+        class="bg-[#1C204B] text-[#fff] p-8 relative -top-28 rounded-[0.9375rem]"
+      >
+        <div class="flex justify-between items-center">
+          <h2 class="text-lg font-normal leading-normal">Study</h2>
+          <img
+            src="/public/images/icon-ellipsis.svg"
+            alt=""
+            class="inline-block"
+          />
+        </div>
+        <div class="flex flex-col gap-2">
+          <p class="text-[3.5rem] font-normal leading-normal">4hrs</p>
+          <p class="text-[0.9375rem] font-normal leading-normal">
+            Last Week - 7hrs
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Exercise / Second Row & Second Column -->
+    <section class="w-[15.9375rem] h-[12.4375rem]">
+      <div class="">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="255"
+          height="160"
+          viewBox="0 0 255 160"
+          fill="none"
+        >
+          <rect width="255" height="160" rx="15" fill="#4BCF82"></rect>
+          <mask
+            id="mask0_0_474"
+            style="mask-type:luminance"
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="255"
+            height="160"
+          >
+            <rect width="255" height="160" rx="15" fill="white"></rect>
+          </mask>
+          <g mask="url(#mask0_0_474)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M234.571 31.7925L234.571 32.0521C234.571 33.2166 234.117 34.3118 233.294 35.1354C232.472 35.9581 231.375 36.4124 230.211 36.4124L214.44 36.4114C212.094 36.4124 210.048 34.3667 210.048 32.0192L210.047 23.6142L197.997 23.6049L198.007 38.7742C198.008 39.201 197.797 39.6006 197.446 39.8418L179.349 52.2515C177.986 53.1008 176.391 53.2845 174.923 52.7891C174.163 52.5323 173.484 52.1072 172.929 51.5524C172.414 51.0368 172.005 50.4089 171.736 49.7013C170.861 47.4088 171.81 44.768 173.992 43.4252L186.295 34.4516L186.547 23.1717L172.991 23.6142C172.632 23.6261 172.286 23.4889 172.034 23.2366L159.237 10.4393C158.238 9.44019 157.687 8.05894 157.724 6.64673C157.761 5.21433 158.37 3.89625 159.438 2.93645C161.48 1.09731 164.672 1.24901 166.705 3.282L175.281 11.858L204.725 10.2225L202.592 8.08991L190.329 8.43732C189.118 8.49127 187.91 8.02415 187.035 7.15755L187.019 7.14201C186.141 6.2636 185.681 5.08904 185.725 3.83485C185.806 1.48831 187.885 -0.420318 190.357 -0.421249L206.804 0.00475323C207.135 0.0138656 207.449 0.149103 207.684 0.384057L217.637 10.3377C218.523 11.2234 219.039 12.399 219.088 13.6495L219.602 26.5181C219.623 27.0218 220.035 27.4138 220.539 27.413L230.134 27.3628C232.586 27.3638 234.571 29.3537 234.571 31.7925ZM235.106 22.3221C232.082 25.3469 227.162 25.3469 224.137 22.3221C221.113 19.2974 221.113 14.3777 224.137 11.3529C227.162 8.32807 232.082 8.32817 235.106 11.3529C238.131 14.3776 238.131 19.2973 235.106 22.3221Z"
+              fill="#29BA66"></path>
+          </g>
+        </svg>
+      </div>
+      <div
+        class="bg-[#1C204B] text-[#fff] p-8 relative -top-28 rounded-[0.9375rem]"
+      >
+        <div class="flex justify-between items-center">
+          <h2 class="text-lg font-normal leading-normal">Exercise</h2>
+          <img
+            src="/public/images/icon-ellipsis.svg"
+            alt=""
+            class="inline-block"
+          />
+        </div>
+        <div class="flex flex-col gap-2">
+          <p class="text-[3.5rem] font-normal leading-normal">4hrs</p>
+          <p class="text-[0.9375rem] font-normal leading-normal">
+            Last Week - 5hrs
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Social / Second Row & Third Column -->
+    <section class="w-[15.9375rem] h-[12.4375rem]">
+      <div class="">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="255"
+          height="160"
+          viewBox="0 0 255 160"
+          fill="none"
+        >
+          <rect width="255" height="160" rx="15" fill="#7335D2"></rect>
+          <mask
+            id="mask0_0_490"
+            style="mask-type:luminance"
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="255"
+            height="160"
+          >
+            <rect width="255" height="160" rx="15" fill="white"></rect>
+          </mask>
+          <g mask="url(#mask0_0_490)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M232.095 31.2242C225.938 37.3814 217.619 36.4078 212.838 31.6266L202.338 21.1275L188.864 21.9049C186.962 22.0161 185.941 19.711 187.279 18.3724L193.545 12.1071C189.745 6.89567 190.196 -0.469298 194.896 -5.16995C201.025 -11.2987 209.34 -10.3863 214.154 -5.57233L232.095 12.3689C237.293 17.5666 237.294 26.0255 232.095 31.2242ZM224.243 23.7743C225.245 22.7722 225.245 21.1471 224.242 20.144C223.24 19.142 221.615 19.142 220.613 20.144C219.611 21.1461 219.611 22.7712 220.613 23.7733C221.616 24.7763 223.241 24.7763 224.243 23.7743ZM202.749 5.90925C201.747 4.9072 201.747 3.28204 202.749 2.27999C203.751 1.27794 205.376 1.27794 206.378 2.27999C207.381 3.28302 207.381 4.90818 206.379 5.91023C205.377 6.91228 203.752 6.91228 202.749 5.90925ZM215.31 14.8418C216.312 13.8397 216.312 12.2145 215.31 11.2125C214.308 10.2104 212.683 10.2104 211.681 11.2125C210.679 12.2145 210.679 13.8397 211.681 14.8418C212.683 15.8438 214.308 15.8438 215.31 14.8418Z"
+              fill="#5A1CBB"></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M204.222 30.7564L222.164 48.6976C227.035 53.5686 227.82 61.8961 221.761 67.9553C217.061 72.6559 209.696 73.1062 204.484 69.307L198.219 75.5722C196.872 76.9193 194.575 75.8739 194.685 73.9881L195.463 60.5141L184.964 50.0151C180.105 45.1562 179.294 36.8295 185.366 30.7574C190.565 25.5586 199.025 25.5586 204.222 30.7564ZM192.817 38.6086C191.814 39.6116 191.814 41.2368 192.817 42.2398C193.819 43.2419 195.444 43.2419 196.447 42.2388C197.449 41.2368 197.449 39.6116 196.447 38.6096C195.444 37.6065 193.819 37.6065 192.817 38.6086ZM201.749 51.1713C200.747 50.1693 200.747 48.5441 201.75 47.5411C202.752 46.5391 204.377 46.5391 205.379 47.5411C206.381 48.5432 206.381 50.1683 205.379 51.1704C204.376 52.1734 202.751 52.1734 201.749 51.1713ZM210.681 56.4726C209.678 57.4757 209.678 59.1008 210.681 60.1038C211.683 61.1059 213.308 61.1059 214.311 60.1029C215.313 59.1008 215.313 57.4757 214.311 56.4736C213.308 55.4706 211.683 55.4706 210.681 56.4726Z"
+              fill="#5A1CBB"></path>
+          </g>
+        </svg>
+      </div>
+      <div
+        class="bg-[#1C204B] text-[#fff] p-8 relative -top-28 rounded-[0.9375rem]"
+      >
+        <div class="flex justify-between items-center">
+          <h2 class="text-lg font-normal leading-normal">Social</h2>
+          <img
+            src="/public/images/icon-ellipsis.svg"
+            alt=""
+            class="inline-block"
+          />
+        </div>
+        <div class="flex flex-col gap-2">
+          <p class="text-[3.5rem] font-normal leading-normal">5hrs</p>
+          <p class="text-[0.9375rem] font-normal leading-normal">
+            Last Week - 10hrs
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Self Care / Second Row & Fourth Column -->
+    <section class="w-[15.9375rem] h-[12.4375rem]">
+      <div class="">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="255"
+          height="160"
+          viewBox="0 0 255 160"
+          fill="none"
+        >
+          <rect width="255" height="160" rx="15" fill="#F1C75B"></rect>
+          <mask
+            id="mask0_0_514"
+            style="mask-type:luminance"
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="255"
+            height="160"
+          >
+            <rect width="255" height="160" rx="15" fill="white"></rect>
+          </mask>
+          <g mask="url(#mask0_0_514)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M173.937 40.1385L173.918 39.8483L173.918 39.8479C172.585 19.6965 171.705 6.38365 181.875 -3.78645C190.288 -12.1999 203.484 -12.1851 211.917 -3.75245C215.707 0.037586 218.028 5.20597 218.443 10.5583C223.794 10.9732 228.963 13.294 232.753 17.0839C241.185 25.516 241.2 38.7118 232.786 47.1254C228.136 51.7758 221.774 54.3481 212.766 55.2209C205.054 55.9683 195.903 55.4918 183.817 54.7367L183.779 54.7342L177.741 54.2867C176.932 54.2266 176.205 53.8745 175.666 53.3352C175.127 52.7959 174.775 52.0694 174.715 51.2602L174.267 45.2217C174.266 45.2104 174.265 45.1989 174.264 45.1877L174.264 45.1838C174.156 43.4513 174.045 41.7703 173.937 40.1385ZM200.532 22.2947L194.36 16.1225L188.201 22.2811L194.374 28.4534L188.215 34.6118L194.388 40.7844L200.546 34.6259L206.719 40.7984L212.877 34.6398L206.705 28.4673L212.864 22.3086L206.691 16.136L200.532 22.2947Z"
+              fill="#E6A532"></path>
+          </g>
+        </svg>
+      </div>
+      <div
+        class="bg-[#1C204B] text-[#fff] p-8 relative -top-28 rounded-[0.9375rem]"
+      >
+        <div class="flex justify-between items-center">
+          <h2 class="text-lg font-normal leading-normal">Self Care</h2>
+          <img
+            src="/public/images/icon-ellipsis.svg"
+            alt=""
+            class="inline-block"
+          />
+        </div>
+        <div class="flex flex-col gap-2">
+          <p class="text-[3.5rem] font-normal leading-normal">2hrs</p>
+          <p class="text-[0.9375rem] font-normal leading-normal">
+            Last Week - 2hrs
+          </p>
         </div>
       </div>
     </section>
